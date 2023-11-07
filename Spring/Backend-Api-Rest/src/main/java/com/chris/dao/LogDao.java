@@ -6,25 +6,23 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 @Entity
-@Table(name = "lots_cliente")
+@Table(name = "logs_cliente")
 public class LogDao {
    @Id
+   @GeneratedValue(
+    strategy = GenerationType.IDENTITY
+   )
    private Integer id;
    @Column
    private String description;
 
    @Column(name = "operation_at")
-   private String operationAt = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm:ss a"));
+   private String operationAt = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy, hh:mm:ss a"));
 
    public LogDao() {
    }
 
    public LogDao(String description) {
-      this.description = description;
-   }
-
-   public LogDao(Integer id, String description) {
-      this.id = id;
       this.description = description;
    }
 
@@ -34,11 +32,11 @@ public class LogDao {
       this.operationAt = operationAt;
    }
 
-   public int getId() {
+   public Integer getId() {
       return id;
    }
 
-   public void setId(int id) {
+   public void setId(Integer id) {
       this.id = id;
    }
 
