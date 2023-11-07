@@ -1,0 +1,29 @@
+<div class="card border-primary mb-3">
+  <div class="card-header"> Logs </div>
+  <div class="card-body">
+    <h5 class="card-title text-primary"> Listado de Logs </h5>
+    <table class="table table-dark table-bordered table-striped border-primary">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Fecha y Hora de la Operación</th>
+        <th> Eliminar </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let log of logs">
+        <td>{{log.id}}</td>
+        <td>{{log.description}}</td>
+        <td>{{log.operationAt}}</td>
+        <td>
+          <button type="button" name="eliminar" (click)="delete(log)"  class="btn btn-danger btn-sm">
+            Eliminar
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

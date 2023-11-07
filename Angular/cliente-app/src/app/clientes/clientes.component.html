@@ -1,0 +1,57 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">Clientes</div>
+  <div class="card-body">
+    <h5 class="card-title text-primary">Listado de Clientes</h5>
+    <div *ngIf="clientes?.length == 0" class="alert alert-info">
+      No hay clientes registrados.
+    </div>
+    <table class="table table-dark table-bordered table-striped border-primary" *ngIf="clientes?.length > 0">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Fecha</th>
+        <th> Editar</th>
+        <th> Eliminar</th>
+        <th> Ocultar</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <ng-container *ngIf="!isVisible(cliente.id)">
+          <td>{{cliente.id}}</td>
+          <td>{{cliente.nombre}}</td>
+          <td>{{cliente.apellido}}</td>
+          <td>{{cliente.email}}</td>
+          <td>{{cliente.createAt}}</td>
+          <td>
+            <button type="button" name="editar" [routerLink]="['/clientes/form', cliente.id]"
+                    class="btn btn-primary btn-sm">
+              Editar
+            </button>
+          </td>
+          <td>
+            <button type="button" name="eliminar" (click)="delete(cliente)" class="btn btn-danger btn-sm">
+              Eliminar
+            </button>
+          </td>
+          <td>
+            <button type="button" name="ocultar" (click)="setClientesNoVisible(cliente.id)"
+                    class="btn btn-warning btn-sm">
+              Ocultar
+            </button>
+          </td>
+        </ng-container>
+      </tr>
+      </tbody>
+    </table>
+    <div class="my-2 text-left">
+      <button class="btn btn-rounded btn-dark" type="button" [routerLink]="['/clientes/form']"> Crear Cliente </button>
+    </div>
+    <div class="my-3 text-left">
+      <button class="btn btn-rounded btn-dark" type="button" (click)="mostrarClientesOcultos()"> Mostrar todos los Clientes </button>
+    </div>
+  </div>
+</div>
