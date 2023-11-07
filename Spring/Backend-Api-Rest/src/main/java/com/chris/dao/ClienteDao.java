@@ -8,7 +8,7 @@ import java.util.Date;
 public class ClienteDao {
    @Id
    @GeneratedValue(
-    strategy = GenerationType.SEQUENCE
+    strategy = GenerationType.IDENTITY
    )
    private Integer id;
 

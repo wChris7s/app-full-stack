@@ -59,4 +59,12 @@ public class Cliente {
    public void setCreateAt(Date createAt) {
       this.createAt = createAt;
    }
+
+   @Override
+   public String toString() {
+      return
+       "Nombre: " + this.nombre  +
+       ", Apellido: " + this.apellido +
+       ", Email: " + this.email;
+   }
 }
