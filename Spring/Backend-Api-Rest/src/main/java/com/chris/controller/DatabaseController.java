@@ -24,57 +24,43 @@ public class DatabaseController {
    @Autowired
    private LogService logService;
 
-   private final AtomicInteger logId = new AtomicInteger(1);
-
    @GetMapping("/clientes")
    public List<Cliente> getAll() {
-      List<Cliente> c = clienteService.getAll();
-      LogDao logDao = new LogDao(logId.getAndIncrement(), "Se listo " + c.size() + " clientes.");
-      logService.insert(logDao);
-      return c;
+      List<Cliente> clientes = clienteService.getAll();
+      logService.insertGetAll(clientes);
+      return clientes;
    }
 
    @GetMapping("/clientes/{id}")
    public Cliente getById(@PathVariable Integer id) {
-      Cliente c = clienteService.findById(id);
-      LogDao logDao = new LogDao(logId.getAndIncrement(), "Se busco al cliente " + c.getNombre() + " con ID " + c.getId() + ".");
-      logService.insert(logDao);
-      return c;
+      Cliente cliente = clienteService.findById(id);
+      logService.insertGetById(cliente);
+      return cliente;
    }
 
    @PostMapping("/clientes")
    @ResponseStatus(HttpStatus.CREATED)
    public Cliente insert(@RequestBody ClienteDao clienteDao) {
-      Cliente c = clienteService.insert(clienteDao);
-      LogDao logDao = new LogDao(logId.getAndIncrement(), "Se inserto al cliente " + c.getNombre() + " " + c.getApellido() + ".");
-      logService.insert(logDao);
-      return c;
+      Cliente cliente = clienteService.insert(clienteDao);
+      logService.insert(cliente);
+      return cliente;
    }
 
    @PutMapping("/clientes/{id}")
    @ResponseStatus(HttpStatus.CREATED)
    public Cliente update(@RequestBody ClienteDao clienteDao, @PathVariable Integer id) {
-      Cliente c = clienteService.findById(id);
-
-      LogDao logDao = new LogDao(logId.getAndIncrement(),
-       "Se actualizo al cliente " + c.getNombre() + " " + c.getApellido()
-        + " con email " + c.getEmail() + " a " + clienteDao.getNombre() + " " + clienteDao.getApellido()
-        + " con email " + clienteDao.getEmail() + ".");
-
-      logService.insert(logDao);
-
-      c.setNombre(clienteDao.getNombre());
-      c.setApellido(clienteDao.getApellido());
-      c.setEmail(clienteDao.getEmail());
-      return c;
+      Cliente cliente = clienteService.findById(id);
+      logService.insertUpdate(cliente, ConvertCliente.convertDaoToDto(clienteDao));
+      cliente.setNombre(clienteDao.getNombre());
+      cliente.setApellido(clienteDao.getApellido());
+      cliente.setEmail(clienteDao.getEmail());
+      return cliente;
    }
 
    @DeleteMapping("/clientes/{id}")
    @ResponseStatus(HttpStatus.NO_CONTENT)
    public void delete(@PathVariable Integer id) {
-      LogDao logDao = new LogDao(logId.getAndIncrement(), "Se elimino al cliente con ID " + id + ".");
-      logService.insert(logDao);
-
+      logService.insertDelete(clienteService.findById(id));
       clienteService.delete(id);
    }
 
