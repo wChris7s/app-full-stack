@@ -9,7 +9,6 @@ import Swal from "sweetalert2";
 })
 export class ClientesComponent implements OnInit {
   clientes: Cliente[];
-  idClientesNovisibles: number[] = [];
 
   constructor(private clienteService: ClienteService) {  // Inyección de la dependencia.
   }
@@ -51,17 +50,4 @@ export class ClientesComponent implements OnInit {
       }
     });
   }
-
-  setClientesNoVisible(id: number): void {
-    this.idClientesNovisibles.push(id);
-  }
-
-  isVisible(id: number): boolean {
-    return this.idClientesNovisibles.includes(id);
-  }
-
-  mostrarClientesOcultos(): void {
-    this.idClientesNovisibles = []
-  }
-
 }

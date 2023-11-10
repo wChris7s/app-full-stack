@@ -1,0 +1,931 @@
+<mxfile host="app.diagrams.net" modified="2023-11-07T03:20:34.270Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="tO1mRmWIaHFgUII6ZHN1" version="22.0.8" type="google">
+  <diagram name="Página-1" id="PBOai4PQ9v6ghPNq34oY">
+    <mxGraphModel dx="6200" dy="2936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E_4s96K-0CPUhSEiuMIe-2" target="E_4s96K-0CPUhSEiuMIe-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-2" value="declarations" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-361" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-8" target="E_4s96K-0CPUhSEiuMIe-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-8" value="Componentes Externos" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="-120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E_4s96K-0CPUhSEiuMIe-10" target="E_4s96K-0CPUhSEiuMIe-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-10" target="E_4s96K-0CPUhSEiuMIe-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-10" target="E_4s96K-0CPUhSEiuMIe-14" edge="1">
+          <mxGeometry x="-0.68" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-98" value="¿Qué es un component?" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-10" target="E_4s96K-0CPUhSEiuMIe-96" edge="1">
+          <mxGeometry x="0.1563" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-10" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@Component({ ... })&lt;/span&gt;&lt;/div&gt;export class NameComponent { ... }" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="-120" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-359" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-12" target="E_4s96K-0CPUhSEiuMIe-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-360" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-12" target="E_4s96K-0CPUhSEiuMIe-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-418" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-12" target="E_4s96K-0CPUhSEiuMIe-364" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="-50" />
+              <mxPoint x="1320" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-12" value="&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;app.module.ts&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="960" y="-80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-14" value="selector:&amp;nbsp;Etiqueta HTML que define al component." style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2380" y="-160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-15" value="templateURL o template: Vista o contenido HTML asociado al component." style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2380" y="-80" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-16" value="styleUrls:&amp;nbsp;Estilos del componente, se puede tener varios." style="whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="2380" y="10" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-357" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-59" target="E_4s96K-0CPUhSEiuMIe-356" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-59" value="Angular" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;labelBackgroundColor=none;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="410" y="-390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-67" value="Directiva Estructural" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="560" y="240" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-68" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-67" vertex="1">
+          <mxGeometry y="30" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-69" value="*ngFor" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-68" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-70" value="&amp;lt;etiqueta *ngFor=&quot;let indexObject of Objects&quot;&amp;gt; ... &amp;lt;/etiqueta&amp;gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-68" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-72" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-67" vertex="1">
+          <mxGeometry y="70" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-73" value="*ngIf" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-72" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-74" value="&amp;lt;etiqueta *ngIf=&quot;condición&quot;&amp;gt; ... &amp;lt;/etiqueta&amp;gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-72" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-76" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-67" vertex="1">
+          <mxGeometry y="110" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-77" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-76" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-78" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-76" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-80" value="Event Binding" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-660" y="240" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-81" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-80" vertex="1">
+          <mxGeometry y="30" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-82" value="(click)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-81" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-83" value="&amp;lt;button (click)=&quot;método, condición&quot;&amp;gt; ... &amp;lt;/button&amp;gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-81" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-84" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-80" vertex="1">
+          <mxGeometry y="70" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-85" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-84" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-86" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-84" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-87" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-80" vertex="1">
+          <mxGeometry y="110" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-88" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-87" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-89" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-87" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-93" value="¿Qué es un service?" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-94" target="E_4s96K-0CPUhSEiuMIe-92" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-92" value=" Clase que se utiliza para organizar y compartir lógica de negocio y datos entre diferentes partes de una aplicación" style="whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="2380" y="120" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-362" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-94" target="E_4s96K-0CPUhSEiuMIe-125" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-94" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@Injectable&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;({ ... })&lt;/span&gt;&lt;/div&gt;export class NameService { ... }" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="160" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-96" value="Se utilizan para dividir la interfaz de usuario en partes más pequeñas y manejables, lo que facilita la construcción, el mantenimiento y la organización de una aplicación." style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="2380" y="-250" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-110" value="Comandos" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#36393d;fontSize=12;fillColor=#cdeb8b;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="-760" width="480" height="230.0000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-122" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-110" vertex="1">
+          <mxGeometry y="30" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-123" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px;&quot;&gt;ng serve&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px;&quot;&gt;ng serve --open&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px;&quot;&gt;ng serve --port numero&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;align=center;" parent="E_4s96K-0CPUhSEiuMIe-122" vertex="1">
+          <mxGeometry width="150" height="50" as="geometry">
+            <mxRectangle width="150" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-124" value="Levanta el servidor" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-122" vertex="1">
+          <mxGeometry x="150" width="330" height="50" as="geometry">
+            <mxRectangle width="330" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-111" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-110" vertex="1">
+          <mxGeometry y="80" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-112" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;ng generate class name&lt;/span&gt;&#xa;&#xa;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-111" vertex="1">
+          <mxGeometry width="150" height="50" as="geometry">
+            <mxRectangle width="150" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-113" value="Crea una clase o modelo" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-111" vertex="1">
+          <mxGeometry x="150" width="330" height="50" as="geometry">
+            <mxRectangle width="330" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-114" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-110" vertex="1">
+          <mxGeometry y="130" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-115" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;ng generate component name&lt;/span&gt;&#xa;&#xa;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-114" vertex="1">
+          <mxGeometry width="150" height="50" as="geometry">
+            <mxRectangle width="150" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-116" value="Crea un Componente con sus respectivos archivos, se importan automáticamente en app.module" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-114" vertex="1">
+          <mxGeometry x="150" width="330" height="50" as="geometry">
+            <mxRectangle width="330" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-117" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-110" vertex="1">
+          <mxGeometry y="180" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-118" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;ng generate service name&lt;/span&gt;&#xa;&#xa;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-117" vertex="1">
+          <mxGeometry width="150" height="50" as="geometry">
+            <mxRectangle width="150" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-119" value="Crea un Service con sus respectivos archivos, se importan automáticamente en app.module" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-117" vertex="1">
+          <mxGeometry x="150" width="330" height="50" as="geometry">
+            <mxRectangle width="330" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-125" value="Se pueden inyectar a otros componentes." style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2380" y="210" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-363" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-129" target="E_4s96K-0CPUhSEiuMIe-94" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-129" value="providers" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E_4s96K-0CPUhSEiuMIe-136" target="E_4s96K-0CPUhSEiuMIe-140" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-136" value="Observable" style="whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="940" y="-680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-143" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E_4s96K-0CPUhSEiuMIe-140" target="E_4s96K-0CPUhSEiuMIe-142" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-140" value="Representa un flujo de datos que puede cambiar con el tiempo, emitiendo múltiples valores en secuencia." style="whiteSpace=wrap;html=1;labelBackgroundColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="-580" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-142" value="Proporcionan una forma de suscribirse a este flujo de datos y reaccionar ante los valores emitidos." style="whiteSpace=wrap;html=1;labelBackgroundColor=none;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="-680" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-153" value="Se debe importar Routes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-146" target="E_4s96K-0CPUhSEiuMIe-155" edge="1">
+          <mxGeometry x="-0.0667" relative="1" as="geometry">
+            <mxPoint x="1985" y="975" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-146" value="RouterModule" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="2010" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-149" value="&lt;div style=&quot;&quot;&gt;Utilizando rutas se puede dividir la aplicación en diferentes secciones o aréas.&amp;nbsp;&lt;/div&gt;Es un módulo que se utiliza para establecer la gestión de rutas y navegación en una aplicación" style="text;whiteSpace=wrap;html=1;align=center;fillColor=default;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2210" y="565" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-376" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-155" target="E_4s96K-0CPUhSEiuMIe-158" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-155" value="&lt;pre style=&quot;border-color: var(--border-color); font-size: 9pt; text-align: left; font-family: &amp;quot;FiraCode Nerd Font Mono&amp;quot;, monospace;&quot;&gt;const &lt;span style=&quot;border-color: var(--border-color);&quot;&gt;routes&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;Routes &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;= &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;[&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;    {&lt;/span&gt;path&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;&quot;&lt;/span&gt;, redirectTo&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;/clientes&quot;&lt;/span&gt;, pathMatch&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;full&quot;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;}&lt;/span&gt;,&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    &lt;span style=&quot;border-color: var(--border-color);&quot;&gt;{&lt;/span&gt;path&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;directivas&quot;&lt;/span&gt;, component&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;DirectivaComponent&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;}&lt;/span&gt;,&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    &lt;span style=&quot;border-color: var(--border-color);&quot;&gt;{&lt;/span&gt;path&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;clientes&quot;&lt;/span&gt;, component&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ClientesComponent&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;}&lt;/span&gt;,&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;]&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1835" y="735" width="470" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-176" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-171" target="E_4s96K-0CPUhSEiuMIe-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-405" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-155" target="E_4s96K-0CPUhSEiuMIe-403" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1835" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-158" value="Estructura" style="shape=table;startSize=50;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1867.5" y="885" width="420" height="178" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-168" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-158" vertex="1">
+          <mxGeometry y="50" width="420" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-169" value="path" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-168" vertex="1">
+          <mxGeometry width="70" height="33" as="geometry">
+            <mxRectangle width="70" height="33" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-170" value="Contiene una URL y se mapea con un component" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-168" vertex="1">
+          <mxGeometry x="70" width="350" height="33" as="geometry">
+            <mxRectangle width="350" height="33" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-159" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-158" vertex="1">
+          <mxGeometry y="83" width="420" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-160" value="component" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-159" vertex="1">
+          <mxGeometry width="70" height="27" as="geometry">
+            <mxRectangle width="70" height="27" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-161" value="Componente que será mapeado." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-159" vertex="1">
+          <mxGeometry x="70" width="350" height="27" as="geometry">
+            <mxRectangle width="350" height="27" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-162" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-158" vertex="1">
+          <mxGeometry y="110" width="420" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-163" value="redirectTo" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-162" vertex="1">
+          <mxGeometry width="70" height="34" as="geometry">
+            <mxRectangle width="70" height="34" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-164" value="Redirecciona a otra ruta." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-162" vertex="1">
+          <mxGeometry x="70" width="350" height="34" as="geometry">
+            <mxRectangle width="350" height="34" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-171" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-158" vertex="1">
+          <mxGeometry y="144" width="420" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-172" value="pathMatch" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-171" vertex="1">
+          <mxGeometry width="70" height="34" as="geometry">
+            <mxRectangle width="70" height="34" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-173" value="Tipo de coincidencia" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-171" vertex="1">
+          <mxGeometry x="70" width="350" height="34" as="geometry">
+            <mxRectangle width="350" height="34" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-175" value="full: Indica que la ruta debe coincidir con la URL completa." style="whiteSpace=wrap;html=1;startSize=50;align=left;verticalAlign=top;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="2117.5" y="1095" width="170" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-177" target="E_4s96K-0CPUhSEiuMIe-206" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-880" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-880" y="270" />
+              <mxPoint x="-1180" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-177" value="Spring" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;labelBackgroundColor=none;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="-910" y="-390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-206" value="Anotaciones" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontSize=12;fillColor=#cdeb8b;strokeColor=#36393d;" parent="1" vertex="1">
+          <mxGeometry x="-1600" y="340" width="840" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-222" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="30" width="840" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-223" value="Definición" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;strokeWidth=1;fillColor=none;" parent="E_4s96K-0CPUhSEiuMIe-222" vertex="1">
+          <mxGeometry width="370" height="83" as="geometry">
+            <mxRectangle width="370" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-224" value="Anotación" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;align=center;fontStyle=1;strokeWidth=1;fillColor=none;" parent="E_4s96K-0CPUhSEiuMIe-222" vertex="1">
+          <mxGeometry x="370" width="120" height="83" as="geometry">
+            <mxRectangle width="120" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-225" value="Estructura" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;align=center;strokeWidth=1;fillColor=none;" parent="E_4s96K-0CPUhSEiuMIe-222" vertex="1">
+          <mxGeometry x="490" width="350" height="83" as="geometry">
+            <mxRectangle width="350" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-207" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="113" width="840" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-208" value="&lt;div style=&quot;text-align: justify; font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px;&quot;&gt;Es utilizada para configurar la política de intercambio de recursos entre diferentes dominios o &quot;cross-origin resource sharing&quot; (CORS) en una aplicación web basada en Spring.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-207" vertex="1">
+          <mxGeometry width="370" height="83" as="geometry">
+            <mxRectangle width="370" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-209" value="&lt;div style=&quot;font-size: 12px;&quot;&gt;@CrossOrigin&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;align=center;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-207" vertex="1">
+          <mxGeometry x="370" width="120" height="83" as="geometry">
+            <mxRectangle width="120" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-219" value="&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px;&quot;&gt;&lt;b&gt;origins&lt;/b&gt;:&amp;nbsp; Especifica los orígenes permitidos (dominios) que pueden acceder a la API.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px;&quot;&gt;&lt;b&gt;methods&lt;/b&gt;:&amp;nbsp;Define los métodos HTTP que se permiten para las solicitudes CORS, como &quot;GET&quot;, &quot;POST&quot;, &quot;PUT&quot;, etc.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;align=center;" parent="E_4s96K-0CPUhSEiuMIe-207" vertex="1">
+          <mxGeometry x="490" width="350" height="83" as="geometry">
+            <mxRectangle width="350" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-210" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="196" width="840" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-211" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Indica que todos los métodos de la clase se comportarán como controladores de RESTful Web Services. Esto significa que cada método se encargará de manejar solicitudes HTTP y devolverá respuestas en formato JSON o XML, según la configuración.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-210" vertex="1">
+          <mxGeometry width="370" height="84" as="geometry">
+            <mxRectangle width="370" height="84" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-212" value="@RestController" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-210" vertex="1">
+          <mxGeometry x="370" width="120" height="84" as="geometry">
+            <mxRectangle width="120" height="84" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-220" value="-" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-210" vertex="1">
+          <mxGeometry x="490" width="350" height="84" as="geometry">
+            <mxRectangle width="350" height="84" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-226" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="280" width="840" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-227" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Es utilizada para asignar solicitudes HTTP a métodos específicos en controladores de Spring. Puede aplicarse a nivel de clase para especificar una raíz de URI común para todos los métodos del controlador.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-226" vertex="1">
+          <mxGeometry width="370" height="84" as="geometry">
+            <mxRectangle width="370" height="84" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-228" value="@RequestMapping" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-226" vertex="1">
+          <mxGeometry x="370" width="120" height="84" as="geometry">
+            <mxRectangle width="120" height="84" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-229" value="@RequestMapping(&quot;/api&quot;), etc." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-226" vertex="1">
+          <mxGeometry x="490" width="350" height="84" as="geometry">
+            <mxRectangle width="350" height="84" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-213" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="364" width="840" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-214" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Escanea y registra clases de entidad JPA en el contexto de persistencia de la aplicación. En otras palabras, mapea las clases Entity.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-213" vertex="1">
+          <mxGeometry width="370" height="83" as="geometry">
+            <mxRectangle width="370" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-215" value="@EntityScan" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-213" vertex="1">
+          <mxGeometry x="370" width="120" height="83" as="geometry">
+            <mxRectangle width="120" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-221" value="@EntityScan(basePackages = path)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-213" vertex="1">
+          <mxGeometry x="490" width="350" height="83" as="geometry">
+            <mxRectangle width="350" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-277" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="447" width="840" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-278" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Se utiliza para inyectar automáticamente dependencias en los componentes de una aplicación gestionada por Spring, como clases de servicio, controladores y repositorios. Se puede tener inyección de dependencias por atributo, constructor y setter.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-277" vertex="1">
+          <mxGeometry width="370" height="83" as="geometry">
+            <mxRectangle width="370" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-279" value="@Autowired" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-277" vertex="1">
+          <mxGeometry x="370" width="120" height="83" as="geometry">
+            <mxRectangle width="120" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-280" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-277" vertex="1">
+          <mxGeometry x="490" width="350" height="83" as="geometry">
+            <mxRectangle width="350" height="83" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-293" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="530" width="840" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-294" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Es una anotación que se utiliza en una entidad JPA para marcar un método que se debe ejecutar antes de que la entidad sea persistida (es decir, antes de que se inserte en la base de datos). Este método se conoce como un método de callback de ciclo de vida. Se utiliza para&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;realizar tareas como la inicialización de valores antes de que la entidad sea almacenada en la base de datos.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-293" vertex="1">
+          <mxGeometry width="370" height="110" as="geometry">
+            <mxRectangle width="370" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-295" value="@PrePersist" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-293" vertex="1">
+          <mxGeometry x="370" width="120" height="110" as="geometry">
+            <mxRectangle width="120" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-296" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;" parent="E_4s96K-0CPUhSEiuMIe-293" vertex="1">
+          <mxGeometry x="490" width="350" height="110" as="geometry">
+            <mxRectangle width="350" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-297" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="640" width="840" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-298" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Es una anotación utilizada para especificar cómo se debe mapear un atributo de fecha o hora en una entidad a las columnas de fecha/hora en la base de datos. Permite controlar la precisión y el tipo de almacenamiento de las fechas y horas.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-297" vertex="1">
+          <mxGeometry width="370" height="110" as="geometry">
+            <mxRectangle width="370" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-299" value="@Temporal" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-297" vertex="1">
+          <mxGeometry x="370" width="120" height="110" as="geometry">
+            <mxRectangle width="120" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-300" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@Temporal(TemporalType.DATE): Fecha&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@Temporal(TemporalType.TIME): Hora&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@Temporal(TemporalType.TIMESTAMP): Fecha y Hora&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;align=center;" parent="E_4s96K-0CPUhSEiuMIe-297" vertex="1">
+          <mxGeometry x="490" width="350" height="110" as="geometry">
+            <mxRectangle width="350" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-301" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-206" vertex="1">
+          <mxGeometry y="750" width="840" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-302" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Se utiliza para indicar explícitamente el código de estado HTTP que debe devolverse en una respuesta cuando se ejecuta un método en un controlador.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-301" vertex="1">
+          <mxGeometry width="370" height="140" as="geometry">
+            <mxRectangle width="370" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-303" value="@ResponseStatus" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#FF0000;fontStyle=1" parent="E_4s96K-0CPUhSEiuMIe-301" vertex="1">
+          <mxGeometry x="370" width="120" height="140" as="geometry">
+            <mxRectangle width="120" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-304" value="@ResponseStatus(HttpStatus.OK)&lt;br&gt;@ResponseStatus(HttpStatus.CREATED)&lt;br&gt;@ResponseStatus(HttpStatus.NO_CONTENT)&lt;br&gt;@ResponseStatus(HttpStatus.BAD_REQUEST)&lt;br&gt;@ResponseStatus(HttpStatus.UNAUTHORIZED)&lt;br&gt;@ResponseStatus(HttpStatus.FORBIDDEN)&lt;br&gt;@ResponseStatus(HttpStatus.NOT_FOUND)&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)&lt;br&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#000000;align=center;" parent="E_4s96K-0CPUhSEiuMIe-301" vertex="1">
+          <mxGeometry x="490" width="350" height="140" as="geometry">
+            <mxRectangle width="350" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-217" value="CORS es un mecanismo de seguridad que permite o restringe las solicitudes HTTP entre diferentes dominios web." style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-1930" y="469.5" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-207" target="E_4s96K-0CPUhSEiuMIe-217" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-236" value="service" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#36393d;fontSize=12;align=center;fillColor=#ffff88;" parent="1" vertex="1">
+          <mxGeometry x="-1480" y="80" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-237" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;align=left;" parent="E_4s96K-0CPUhSEiuMIe-236" vertex="1">
+          <mxGeometry y="30" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-238" value="La capa de servicio contiene lógica de negocio y es responsable de manipular los datos recuperados de la capa de repositorio. En otras palabras, la capa de servicio realiza operaciones en los datos (por ejemplo, filtrado, ordenamiento, validación, etc.) antes de enviarlos de vuelta al controlador o al repositorio." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;align=left;" parent="E_4s96K-0CPUhSEiuMIe-237" vertex="1">
+          <mxGeometry width="240" height="130" as="geometry">
+            <mxRectangle width="240" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-253" value="repository" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#36393d;fontSize=12;align=center;fillColor=#ffff88;" parent="1" vertex="1">
+          <mxGeometry x="-1480" y="-120" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-254" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;align=left;" parent="E_4s96K-0CPUhSEiuMIe-253" vertex="1">
+          <mxGeometry y="30" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-255" value="La capa de repositorio es responsable de acceder a la base de datos y realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Proporciona una capa de abstracción sobre la base de datos para que la capa de servicio no tenga que lidiar con los detalles de cómo se almacenan los datos." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;align=left;" parent="E_4s96K-0CPUhSEiuMIe-254" vertex="1">
+          <mxGeometry width="240" height="130" as="geometry">
+            <mxRectangle width="240" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-256" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-254" target="E_4s96K-0CPUhSEiuMIe-177" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-237" target="E_4s96K-0CPUhSEiuMIe-177" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-258" value="controller" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#36393d;fontSize=12;align=center;fillColor=#ffff88;" parent="1" vertex="1">
+          <mxGeometry x="-1480" y="-320" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-259" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;align=left;" parent="E_4s96K-0CPUhSEiuMIe-258" vertex="1">
+          <mxGeometry y="30" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-260" value="&amp;nbsp;El controlador es responsable de manejar las solicitudes HTTP entrantes y enviar respuestas. Por lo general, recibe datos del usuario a través de la solicitud, delega en un servicio para realizar la lógica de negocio y luego envía una respuesta al usuario." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;align=left;" parent="E_4s96K-0CPUhSEiuMIe-259" vertex="1">
+          <mxGeometry width="240" height="130" as="geometry">
+            <mxRectangle width="240" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-259" target="E_4s96K-0CPUhSEiuMIe-177" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-262" value="Controller" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="-240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-263" value="Repository" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-266" value="Envía los datos al Controller." style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-264" target="E_4s96K-0CPUhSEiuMIe-262" edge="1">
+          <mxGeometry x="-0.1429" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-264" value="Service" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-268" value="BD" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-1830" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-269" value="Accede a la BD y realiza las Operaciones, trabaja con los DAO" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-268" target="E_4s96K-0CPUhSEiuMIe-263" edge="1">
+          <mxGeometry x="-0.1111" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1760" y="40" as="sourcePoint" />
+            <mxPoint x="-1710" y="-10" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-270" value="Manipula los datos obtenidos de la capa Repository" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-263" target="E_4s96K-0CPUhSEiuMIe-264" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1760" y="40" as="sourcePoint" />
+            <mxPoint x="-1710" y="-10" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1670" y="20" />
+              <mxPoint x="-1670" y="-80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-281" value="Menos código manual.&#xa;Mayor flexibilidad.&#xa;Facilita las pruebas unitarias.&#xa;Menos acoplamiento." style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="753.5" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-277" target="E_4s96K-0CPUhSEiuMIe-281" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-283" value="Evita tener que crear instancias de una clase, así como tener que configurar manualmente." style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="833.5" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-284" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-277" target="E_4s96K-0CPUhSEiuMIe-283" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-378" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-285" target="E_4s96K-0CPUhSEiuMIe-289" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-285" value="HttpClientModule" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-286" value="Nos permite poder conectarnos con el servidor,a través de peticiones HTTP" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1690" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-379" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-289" target="E_4s96K-0CPUhSEiuMIe-291" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-289" value="&lt;pre style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;FiraCode Nerd Font Mono&amp;quot;, monospace; background-color: initial; white-space: normal;&quot;&gt;private urlEndPoint: string = &quot;http://localhost:8081/api/clientes&quot;&lt;/span&gt;&lt;/div&gt;&lt;font face=&quot;FiraCode Nerd Font Mono, monospace&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;getClientes(): Observable&amp;lt;Cliente[]&amp;gt; {&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp;return this.http.get(this.urlEndPoint)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;.pipe(&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;map(response =&amp;gt; response as Cliente[]&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// Convierte el stream que llega en formato json a un tipo Cliente[]&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp;)&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; white-space: normal;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="735" width="625" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-291" value="http.acción: get, put, delete, etc." style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="925" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-305" value="&lt;div style=&quot;text-align: justify;&quot;&gt;200 OK:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: La solicitud se completó con éxito. Se utiliza para indicar que la solicitud fue exitosa y se han devuelto los datos solicitados.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Utiliza este código de estado para respuestas exitosas en operaciones de lectura, búsqueda o recuperación de recursos.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;201 Created:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado. Se utiliza para indicar que se ha creado un nuevo recurso a partir de la solicitud.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Es adecuado para respuestas exitosas en operaciones de creación, como al agregar un nuevo objeto a una colección.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;204 No Content:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: La solicitud se completó con éxito, pero no hay contenido para enviar en la respuesta. Se utiliza para indicar que no se ha devuelto ningún cuerpo de respuesta.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Puede usarse, por ejemplo, cuando se completa con éxito una solicitud de eliminación, ya que no se espera contenido en la respuesta.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;400 Bad Request:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: Indica que la solicitud es incorrecta o mal formada. Se utiliza cuando la solicitud no cumple con los requisitos esperados.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Debes usarlo cuando recibas solicitudes que no se ajusten a la estructura o formato esperado, como datos faltantes o inválidos.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;401 Unauthorized:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: Indica que la solicitud requiere autenticación y/o autorización, y el cliente no proporcionó credenciales válidas.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Utiliza este código cuando se requiere autenticación y el cliente no ha proporcionado credenciales válidas.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;403 Forbidden:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: Indica que el servidor comprende la solicitud, pero se niega a cumplirla. Esto puede deberse a falta de autorización, permisos o restricciones en el servidor.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Debes usarlo cuando un cliente intenta acceder a un recurso o realizar una acción para la cual no tiene permiso.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;404 Not Found:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: Indica que el servidor no puede encontrar el recurso solicitado. Se utiliza cuando el recurso no existe en el servidor.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Emplea este código cuando una solicitud se refiere a un recurso que no se encuentra en el servidor.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;500 Internal Server Error:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Significado: Indica que se ha producido un error en el servidor que impide que la solicitud se complete. Se utiliza para errores internos del servidor.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Cuándo usarlo: Este código se utiliza cuando ocurren errores no manejados en el servidor, como excepciones no controladas.&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-620" y="913.5" width="970" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-301" target="E_4s96K-0CPUhSEiuMIe-305" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-324" value="Directivas" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="240" width="690" height="196.99999999999977" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-325" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-324" vertex="1">
+          <mxGeometry y="30" width="690" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-326" value="ngModel" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-325" vertex="1">
+          <mxGeometry width="70" height="57" as="geometry">
+            <mxRectangle width="70" height="57" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-327" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Permite sincronizar automáticamente el valor de un elemento,&amp;nbsp;cualquier cambio en el elemento se reflejará en la propiedad del componente y viceversa.&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;align=right;" parent="E_4s96K-0CPUhSEiuMIe-325" vertex="1">
+          <mxGeometry x="70" width="350" height="57" as="geometry">
+            <mxRectangle width="350" height="57" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-335" value="&lt;font color=&quot;#ff0000&quot;&gt;&amp;lt;input [(ngModel)]=&quot;nombreDeLaPropiedad&quot;&amp;gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;align=center;" parent="E_4s96K-0CPUhSEiuMIe-325" vertex="1">
+          <mxGeometry x="420" width="270" height="57" as="geometry">
+            <mxRectangle width="270" height="57" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-328" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-324" vertex="1">
+          <mxGeometry y="87" width="690" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-329" value="ngSubmit" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-328" vertex="1">
+          <mxGeometry width="70" height="70" as="geometry">
+            <mxRectangle width="70" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-330" value="Permite asociar una función en el componente a un evento de envío de formulario.&amp;nbsp;Controlar lo que sucede cuando un formulario se envía." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-328" vertex="1">
+          <mxGeometry x="70" width="350" height="70" as="geometry">
+            <mxRectangle width="350" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-336" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&amp;lt;form (ngSubmit)=&quot;miFuncion()&quot;&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&amp;nbsp; &amp;lt;!-- Elementos de formulario aquí --&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&amp;nbsp; &amp;lt;button type=&quot;submit&quot;&amp;gt;Enviar&amp;lt;/button&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&amp;lt;/form&amp;gt;&lt;/font&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontColor=#0000FF;" parent="E_4s96K-0CPUhSEiuMIe-328" vertex="1">
+          <mxGeometry x="420" width="270" height="70" as="geometry">
+            <mxRectangle width="270" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-331" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-324" vertex="1">
+          <mxGeometry y="157" width="690" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-332" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-331" vertex="1">
+          <mxGeometry width="70" height="40" as="geometry">
+            <mxRectangle width="70" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-333" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-331" vertex="1">
+          <mxGeometry x="70" width="350" height="40" as="geometry">
+            <mxRectangle width="350" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-337" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" parent="E_4s96K-0CPUhSEiuMIe-331" vertex="1">
+          <mxGeometry x="420" width="270" height="40" as="geometry">
+            <mxRectangle width="270" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-341" value="&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Directivas&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="410" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-344" value="&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Binding&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-347" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-341" target="E_4s96K-0CPUhSEiuMIe-324" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="260" as="sourcePoint" />
+            <mxPoint x="450" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-348" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-341" target="E_4s96K-0CPUhSEiuMIe-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="260" as="sourcePoint" />
+            <mxPoint x="450" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-351" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-59" target="E_4s96K-0CPUhSEiuMIe-341" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="120" as="sourcePoint" />
+            <mxPoint x="280" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-352" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-59" target="E_4s96K-0CPUhSEiuMIe-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="-70" as="sourcePoint" />
+            <mxPoint x="500" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-353" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-59" target="E_4s96K-0CPUhSEiuMIe-344" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="100" as="sourcePoint" />
+            <mxPoint x="180" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-354" value="Permite escuchar y responder a las&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;acciones del usuario,&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;como pulsaciones de teclas, movimientos&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;del mouse, clics y toques." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E_4s96K-0CPUhSEiuMIe-353" connectable="0" vertex="1">
+          <mxGeometry x="0.1641" y="6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-355" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-344" target="E_4s96K-0CPUhSEiuMIe-80" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-200" y="110" as="sourcePoint" />
+            <mxPoint x="-150" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-358" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-356" target="E_4s96K-0CPUhSEiuMIe-136" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-356" value="&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Definiciones&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="940" y="-390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-435" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-364" target="E_4s96K-0CPUhSEiuMIe-431" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-364" value="imports" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2085" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-370" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-364" target="E_4s96K-0CPUhSEiuMIe-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="770" as="sourcePoint" />
+            <mxPoint x="1760" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-371" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-364" target="E_4s96K-0CPUhSEiuMIe-285" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="770" as="sourcePoint" />
+            <mxPoint x="1760" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1680" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-377" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-286" target="E_4s96K-0CPUhSEiuMIe-285" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1570" y="865" as="sourcePoint" />
+            <mxPoint x="1620" y="815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-382" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Transferencia y envío de datos por endpoints&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-177" target="E_4s96K-0CPUhSEiuMIe-59" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-430" y="-160" as="sourcePoint" />
+            <mxPoint x="-330" y="-260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-383" value="BrowserModule" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="2490" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-384" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-364" target="E_4s96K-0CPUhSEiuMIe-383" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="500" as="sourcePoint" />
+            <mxPoint x="2220" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2480" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-386" value="&lt;div style=&quot;&quot;&gt;Proporciona directivas y servicios esenciales para la ejecución de aplicaciones web en un navegador.&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;fillColor=default;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2690" y="560" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-387" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-386" target="E_4s96K-0CPUhSEiuMIe-383" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2680" y="758.5" as="sourcePoint" />
+            <mxPoint x="2540" y="758.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-391" value="FormsModule" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="2490" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-392" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-364" target="E_4s96K-0CPUhSEiuMIe-391" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2155" y="430" as="sourcePoint" />
+            <mxPoint x="2350" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2440" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-398" value="Proporciona soporte para la vinculación de datos bidireccional, que permite la comunicación entre los componentes y las plantillas de Angular. Se utiliza para habilitar la funcionalidad de ngModel y otras directivas relacionadas con formularios." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2690" y="680" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-399" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-391" target="E_4s96K-0CPUhSEiuMIe-398" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2810" y="735" as="sourcePoint" />
+            <mxPoint x="2860" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-400" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-149" target="E_4s96K-0CPUhSEiuMIe-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2120" y="765" as="sourcePoint" />
+            <mxPoint x="2170" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-401" value="La función forRoot se utiliza para configurar las rutas principales de la aplicación." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2250" y="1180" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-403" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;import: [&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;....&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;RouterModule.forRoot(routes),&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;...&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;],&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1970" y="1165" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-406" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-401" target="E_4s96K-0CPUhSEiuMIe-403" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2220" y="601" as="sourcePoint" />
+            <mxPoint x="2140" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-407" value="HttpClient" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1045" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-408" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-285" target="E_4s96K-0CPUhSEiuMIe-407" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1100" y="845" as="sourcePoint" />
+            <mxPoint x="1150" y="795" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="590" />
+              <mxPoint x="1130" y="1075" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-420" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-410" target="E_4s96K-0CPUhSEiuMIe-419" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-410" value="Servicio que se utiliza para realizar solicitudes HTTP en aplicaciones.&amp;nbsp;acilita la comunicación con servidores HTTP para recuperar y enviar datos, y maneja las respuestas y errores de manera efectiva." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1370" y="1035" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-411" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-407" target="E_4s96K-0CPUhSEiuMIe-410" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1400" y="1015" as="sourcePoint" />
+            <mxPoint x="1450" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-412" value="HttpHeaders" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-423" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E_4s96K-0CPUhSEiuMIe-413" target="E_4s96K-0CPUhSEiuMIe-422" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-413" value="Clase utilizada para construir encabezados HTTP personalizados que se pueden adjuntar a las solicitudes HTTP. " style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1370" y="1346.25" width="290" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-414" value="Router" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="2360" y="843.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-427" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-415" target="E_4s96K-0CPUhSEiuMIe-426" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-415" value="Servicio que se utiliza para la navegación y gestión de rutas. Permite definir rutas y navegar entre componentes según las URL definidas." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2530" y="843.5" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-419" value="constructor(private http: HttpClient) {&#xa;&amp;nbsp; // Realizar una solicitud GET&#xa;&amp;nbsp; this.http.get(&#39;https://api.example.com/data&#39;).subscribe(data =&amp;gt; {&#xa;&amp;nbsp; &amp;nbsp; // Procesar los datos aquí&#xa;&amp;nbsp; });&#xa;}" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="1165" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-422" value="const headers = new HttpHeaders({&lt;br&gt;&amp;nbsp; &#39;Content-Type&#39;: &#39;application/json&#39;&lt;br&gt;});&lt;br&gt;&lt;br&gt;&lt;br&gt;this.http.post(&#39;https://api.example.com/resource&#39;, data, { headers: headers }).subscribe(response =&amp;gt; {&lt;br&gt;&amp;nbsp; // Procesar la respuesta&lt;br&gt;});" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1245" y="1455" width="540" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-424" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-285" target="E_4s96K-0CPUhSEiuMIe-412" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1270" y="945" as="sourcePoint" />
+            <mxPoint x="1320" y="895" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="590" />
+              <mxPoint x="1130" y="1375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-425" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-412" target="E_4s96K-0CPUhSEiuMIe-413" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1300" y="1085" as="sourcePoint" />
+            <mxPoint x="1380" y="1085" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-426" value="constructor(private clienteService: ClienteService, private router: Router) {}&#xa;&amp;nbsp; &amp;nbsp; public create(): void {&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // Una vez se inserta el dato. se redirige a la ruta /clientes.&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.clienteService.create(this.cliente).subscribe(&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; (response) =&amp;gt; this.router.navigate([&#39;/clientes&#39;])&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; );&#xa;&amp;nbsp; &amp;nbsp; }" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2440" y="945" width="410" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-428" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-414" target="E_4s96K-0CPUhSEiuMIe-415" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2620" y="725" as="sourcePoint" />
+            <mxPoint x="2700" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-429" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-146" target="E_4s96K-0CPUhSEiuMIe-414" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2150" y="740" as="sourcePoint" />
+            <mxPoint x="2200" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2410" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-431" value="Swal" style="whiteSpace=wrap;html=1;fillColor=#E7B4E0;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="2570" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-432" value="&lt;div style=&quot;&quot;&gt;Nos brinda mensajes de alerta más elegantes y personalizables&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;fillColor=default;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2740" y="400" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E_4s96K-0CPUhSEiuMIe-436" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="E_4s96K-0CPUhSEiuMIe-432" target="E_4s96K-0CPUhSEiuMIe-431" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2820" y="510" as="sourcePoint" />
+            <mxPoint x="2740" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
