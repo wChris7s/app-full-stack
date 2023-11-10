@@ -33,9 +33,14 @@ export class FormComponent implements OnInit {
   public create(): void {
     // Una vez se inserta el dato. se redirige a la ruta /clientes.
     this.clienteService.create(this.cliente).subscribe(
-      (response) => {
+      (cliente) => {  // En este caso ya tiene el Json transformado, por lo que no existe interferencia.
         this.router.navigate(['/clientes']);
-        Swal.fire('Nuevo Cliente', `Cliente ${this.cliente.nombre} creado con éxito!`, 'success')
+        Swal.fire('Nuevo Cliente', `Cliente ${cliente.nombre} creado con éxito!`, 'success')
+
+        // (json) => {
+        //  this.router.navigate(['/clientes']);
+        //  Swal.fire('Nuevo Cliente', `Cliente ${json.cliente.nombre} creado con éxito!`, 'success')
+        // }
       }
     );
   }
