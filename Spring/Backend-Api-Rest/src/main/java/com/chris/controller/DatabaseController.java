@@ -8,11 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
@@ -46,9 +49,19 @@ public class DatabaseController {
    }
 
    @PostMapping("/clientes")
-   public ResponseEntity<?> insert(@RequestBody ClienteDao clienteDao) {
+   public ResponseEntity<?> insert(@Valid @RequestBody ClienteDao clienteDao, BindingResult result) {
       Cliente cliente;
       Map<String, Object> response = new HashMap<>();
+
+      if (result.hasErrors()) {
+         List<String> errors = result.getFieldErrors()
+          .stream()
+          .map(fieldError -> "El campo '" + fieldError.getField() + "' " + fieldError.getDefaultMessage())
+          .collect(Collectors.toList());
+         response.put("errors", errors);
+         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+      }
+
       try {
          cliente = clienteService.insert(clienteDao);
       } catch (DataAccessException e) {
@@ -62,11 +75,21 @@ public class DatabaseController {
    }
 
    @PutMapping("/clientes/{id}")
-   public ResponseEntity<?> update(@RequestBody ClienteDao clienteDao, @PathVariable Integer id) {
+   public ResponseEntity<?> update(@Valid @RequestBody ClienteDao clienteDao, BindingResult result, @PathVariable Integer id) {
       Cliente cliente = clienteService.findById(id);
       Cliente clienteUpdated;
 
       Map<String, Object> response = new HashMap<>();
+
+      if (result.hasErrors()) {
+         List<String> errors = result.getFieldErrors()
+          .stream()
+          .map(fieldError -> "El campo '" + fieldError.getField() + "' " + fieldError.getDefaultMessage())
+          .collect(Collectors.toList());
+         response.put("errors", errors);
+         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+      }
+
       if (cliente == null) {
          response.put("mensaje", "No se puedo editar, el cliente ID: ".concat(id.toString()).concat(" no existe en la base de datos!"));
          return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);

@@ -1,6 +1,9 @@
 package com.chris.dao;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -12,12 +15,17 @@ public class ClienteDao {
    )
    private Integer id;
 
+   @NotEmpty(message = "No puede estar vacío.")   // Validador
+   @Size(min = 4, max = 12, message = "El tamaño del mensaje tiene que estar entre 4 y 12.") // Validador
    @Column(nullable = false)
    private String nombre;
 
-   @Column
+   @NotEmpty(message = "No puede estar vacío.")   // Validador
+   @Column  // Validador
    private String apellido;
 
+   @NotEmpty(message = "No puede estar vacío.")   // Validador
+   @Email(message = "El Email tiene un formato erróneo.")   // Validador
    @Column(nullable = false, unique = true)
    private String email;
 

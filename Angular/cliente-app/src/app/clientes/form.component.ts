@@ -11,6 +11,7 @@ import Swal from 'sweetalert2'
 export class FormComponent implements OnInit {
   cliente: Cliente = new Cliente();
   titulo: string = "Crear Cliente";
+  errores: String[];
 
   constructor(private clienteService: ClienteService, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -31,19 +32,36 @@ export class FormComponent implements OnInit {
   }
 
   public create(): void {
-    // Una vez se inserta el dato. se redirige a la ruta /clientes.
-    this.clienteService.create(this.cliente).subscribe(
-      (cliente) => {  // En este caso ya tiene el Json transformado, por lo que no existe interferencia.
-        this.router.navigate(['/clientes']);
-        Swal.fire('Nuevo Cliente', `Cliente ${cliente.nombre} creado con éxito!`, 'success')
-
-        // (json) => {
-        //  this.router.navigate(['/clientes']);
-        //  Swal.fire('Nuevo Cliente', `Cliente ${json.cliente.nombre} creado con éxito!`, 'success')
-        // }
-      }
-    );
+    this.clienteService.create(this.cliente)  // Retorna una lista de Observables.
+      .subscribe({
+        next: (cliente) => {
+          this.router.navigate(['/clientes']);
+          Swal.fire('Nuevo Cliente', `Cliente ${cliente.nombre} creado con éxito!`, 'success');
+        },
+        error: (e) => {
+          this.errores = e.error.errors as String[];
+        }
+      });
   }
+
+/*  public create(): void {
+    // Una vez se inserta el dato. se redirige a la ruta /clientes.
+    this.clienteService.create(this.cliente)
+      .subscribe(
+        (cliente) => {  // En este caso ya tiene el Json transformado, por lo que no existe interferencia.
+          this.router.navigate(['/clientes']);
+          Swal.fire('Nuevo Cliente', `Cliente ${cliente.nombre} creado con éxito!`, 'success')
+
+          // (json) => {
+          //  this.router.navigate(['/clientes']);
+          //  Swal.fire('Nuevo Cliente', `Cliente ${json.cliente.nombre} creado con éxito!`, 'success')
+          // }
+        },
+        err => {
+          this.errores = err.error.errors as String[];
+        }
+      );
+  }*/
 
   update(): void {
     this.clienteService.update(this.cliente)
