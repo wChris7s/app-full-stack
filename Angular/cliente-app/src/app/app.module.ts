@@ -11,8 +11,14 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {FormComponent} from './clientes/form.component';
 import {FormsModule} from "@angular/forms";
-import {formatDate, registerLocaleData, DatePipe} from "@angular/common";
-import localePE from "@angular/common/locales/es-PE"
+import {registerLocaleData} from "@angular/common";
+import localePE from "@angular/common/locales/es-PE";
+import {PaginatorComponent} from './paginator/paginator.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
 
 
 registerLocaleData(localePE, 'es');
@@ -20,6 +26,7 @@ const routes: Routes = [
   {path: "", redirectTo: "/clientes", pathMatch: "full"},
   {path: "directivas", component: DirectivaComponent},
   {path: "clientes", component: ClientesComponent},
+  {path: "clientes/page/:page", component: ClientesComponent},
   {path: "clientes/form", component: FormComponent},
   {path: "clientes/form/:id", component: FormComponent}
 ]
@@ -36,13 +43,19 @@ const routes: Routes = [
     FooterComponent,
     DirectivaComponent,
     ClientesComponent,
-    FormComponent
+    FormComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [ClienteService, {provide: LOCALE_ID, useValue: "es-PE"}],
   bootstrap: [AppComponent]
