@@ -1,6 +1,8 @@
 server:
   port: 8081
 spring:
+  jackson:
+    time-zone: America/Lima
   data:
     jpa:
       repositories:
@@ -17,3 +19,4 @@ spring:
     init:
       continue-on-error: true
       mode: always
+      schema-locations: classpath:import.sql
