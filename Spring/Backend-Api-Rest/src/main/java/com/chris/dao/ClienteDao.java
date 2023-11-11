@@ -3,6 +3,7 @@ package com.chris.dao;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
@@ -29,14 +30,17 @@ public class ClienteDao {
    @Column(nullable = false, unique = true)
    private String email;
 
+   @NotNull(message = "No puede estar vacío.")   // Validador
    @Column(name = "create_at")
    @Temporal(TemporalType.DATE)
    private Date createAt;
 
+   /*
    @PrePersist
    public void onInit() {
       createAt = new Date();
    }
+   */
 
    public ClienteDao() {
    }
