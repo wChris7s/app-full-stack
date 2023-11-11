@@ -5,6 +5,8 @@ import com.chris.model.Cliente;
 import com.chris.repository.ClienteRepository;
 import com.chris.service.util.ConvertCliente;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,6 +24,11 @@ public class ClienteServiceImpl implements ClienteService {
        .stream()
        .map((ConvertCliente::convertDaoToDto))
        .collect(Collectors.toList());
+   }
+
+   @Override
+   public Page<Cliente> getAll(Pageable pageable) {
+      return clienteRepository.findAll(pageable).map(ConvertCliente::convertDaoToDto);
    }
 
    @Override

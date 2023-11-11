@@ -6,6 +6,9 @@ import com.chris.service.ClienteService;
 import com.chris.service.util.ConvertCliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -27,6 +30,12 @@ public class DatabaseController {
    @GetMapping("/clientes")
    public List<Cliente> getAll() {
       return clienteService.getAll();
+   }
+
+   @GetMapping("/clientes/page/{page}")
+   public Page<Cliente> getAll(@PathVariable Integer page) {
+      Pageable pageable = PageRequest.of(page, 5);
+      return clienteService.getAll(pageable);
    }
 
    @GetMapping("/clientes/{id}")
