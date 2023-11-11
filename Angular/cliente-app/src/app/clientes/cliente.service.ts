@@ -17,22 +17,18 @@ export class ClienteService {
   constructor(private http: HttpClient, private router: Router) {
   }
 
-  getClientes(): Observable<Cliente[]> {
-    // return of(CLIENTES);    // Convertimos/Creamos el flujo Observable a partir de los objetos Clientes.
-    return this.http.get(this.urlEndPoint).pipe(
-      map(response => {
-        let clientes = response as Cliente[];
-        return clientes.map(cliente => {
-          cliente.nombre = cliente.nombre.toUpperCase();
-          // cliente.createAt = formatDate(cliente.createAt, "fullDate", "en-US");
-          // cliente.createAt = formatDate(cliente.createAt, "dd/MM/yyyy", "en-Es");
-
-          let datePipe = new DatePipe('es');
-          // cliente.createAt = datePipe.transform(cliente.createAt, "fullDate");
-          return cliente;
+  getClientes(page: number): Observable<any> {
+    return this.http.get(this.urlEndPoint + '/page/' + page)
+      .pipe(
+        map((response: any) => {
+          (response.content as Cliente[]).map(
+            cliente => {
+              cliente.nombre = cliente.nombre.toUpperCase();
+              return cliente;
+            })
+          return response;
         })
-      })
-    );
+      );
   }
 
   create(cliente: Cliente): Observable<Cliente> {
@@ -48,7 +44,6 @@ export class ClienteService {
         return throwError(err);
       })
     );
-    ;
   }
 
   getCliente(id): Observable<Cliente> {
@@ -84,12 +79,4 @@ export class ClienteService {
       })
     );
   }
-
-  /**
-   * Método síncrono, no podría funcionar en un contexto real con una API-REST
-   * Ya que se require manejar peticiones asíncronas que no bloquee la aplicación.
-   * getClientes(): Cliente[] {
-   *      return CLIENTES;
-   * }
-   */
 }

@@ -22,7 +22,7 @@ export class FormComponent implements OnInit {
 
   cargarCliente(): void {
     this.activatedRoute.params.subscribe((params) => {
-      let id = params['id'];
+      let id = +params['id'];
       if (id) {
         this.clienteService.getCliente(id).subscribe((cliente) => {
           this.cliente = cliente;
@@ -43,25 +43,6 @@ export class FormComponent implements OnInit {
         }
       });
   }
-
-/*  public create(): void {
-    // Una vez se inserta el dato. se redirige a la ruta /clientes.
-    this.clienteService.create(this.cliente)
-      .subscribe(
-        (cliente) => {  // En este caso ya tiene el Json transformado, por lo que no existe interferencia.
-          this.router.navigate(['/clientes']);
-          Swal.fire('Nuevo Cliente', `Cliente ${cliente.nombre} creado con éxito!`, 'success')
-
-          // (json) => {
-          //  this.router.navigate(['/clientes']);
-          //  Swal.fire('Nuevo Cliente', `Cliente ${json.cliente.nombre} creado con éxito!`, 'success')
-          // }
-        },
-        err => {
-          this.errores = err.error.errors as String[];
-        }
-      );
-  }*/
 
   update(): void {
     this.clienteService.update(this.cliente)

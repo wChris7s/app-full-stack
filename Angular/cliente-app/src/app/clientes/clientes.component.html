@@ -1,5 +1,5 @@
 <div class="card border-primary mb-3">
-  <div class="card-header">Clientes</div>
+  <h2 class="card-header">Clientes</h2>
   <div class="card-body">
     <h5 class="card-title text-primary">Listado de Clientes</h5>
     <div *ngIf="clientes?.length == 0" class="alert alert-info">
@@ -42,5 +42,6 @@
     <div class="my-2 text-left">
       <button class="btn btn-rounded btn-dark" type="button" [routerLink]="['/clientes/form']"> Crear Cliente</button>
     </div>
+    <paginator-nav *ngIf="paginador" [paginador]="paginador"></paginator-nav>
   </div>
 </div>
