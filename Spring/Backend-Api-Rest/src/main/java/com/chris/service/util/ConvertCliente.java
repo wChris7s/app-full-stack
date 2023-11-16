@@ -5,14 +5,26 @@ import com.chris.model.Cliente;
 
 public class ConvertCliente {
    public static Cliente convertDaoToDto(ClienteDao clienteDao) {
-      return new Cliente(
-       clienteDao.getId(), clienteDao.getNombre(), clienteDao.getApellido(), clienteDao.getEmail(), clienteDao.getCreateAt()
-      );
+      return Cliente.builder()
+       .id(clienteDao.getId())
+       .nombre(clienteDao.getNombre())
+       .apellido(clienteDao.getApellido())
+       .email(clienteDao.getEmail())
+       .createAt(clienteDao.getCreateAt())
+       .foto(clienteDao.getFoto())
+       .region(ConvertRegion.convertDaoToDto(clienteDao.getRegion()))
+       .build();
    }
 
    public static ClienteDao convertDtoToDao(Cliente clienteDto) {
-      return new ClienteDao(
-       clienteDto.getId(), clienteDto.getNombre(), clienteDto.getApellido(), clienteDto.getEmail(), clienteDto.getCreateAt()
-      );
+      return ClienteDao.builder()
+       .id(clienteDto.getId())
+       .nombre(clienteDto.getNombre())
+       .apellido(clienteDto.getApellido())
+       .email(clienteDto.getEmail())
+       .createAt(clienteDto.getCreateAt())
+       .foto(clienteDto.getFoto())
+       .region(ConvertRegion.convertDtoToDao(clienteDto.getRegion()))
+       .build();
    }
 }

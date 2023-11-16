@@ -1,23 +1,33 @@
 package com.chris.controller;
 
 import com.chris.dao.ClienteDao;
+import com.chris.dao.RegionDAO;
 import com.chris.model.Cliente;
+import com.chris.model.Region;
 import com.chris.service.ClienteService;
+import com.chris.service.UploadFileService;
 import com.chris.service.util.ConvertCliente;
+import com.chris.service.util.ConvertRegion;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
@@ -26,6 +36,9 @@ import java.util.stream.Collectors;
 public class DatabaseController {
    @Autowired
    private ClienteService clienteService;
+
+   @Autowired
+   private UploadFileService uploadFileService;
 
    @GetMapping("/clientes")
    public List<Cliente> getAll() {
@@ -105,10 +118,14 @@ public class DatabaseController {
       }
 
       try {
+
          cliente.setNombre(clienteDao.getNombre());
          cliente.setApellido(clienteDao.getApellido());
          cliente.setEmail(clienteDao.getEmail());
+         cliente.setCreateAt(clienteDao.getCreateAt());
+         cliente.setRegion(ConvertRegion.convertDaoToDto(clienteDao.getRegion()));
          clienteUpdated = clienteService.insert(ConvertCliente.convertDtoToDao(cliente));
+
       } catch (DataAccessException e) {
          response.put("mensaje", "Error al actualizar el cliente en la base de datos.");
          response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
@@ -124,13 +141,62 @@ public class DatabaseController {
    public ResponseEntity<?> delete(@PathVariable Integer id) {
       Map<String, Object> response = new HashMap<>();
       try {
+         Cliente c = clienteService.findById(id);
+         String nombreFotoAnterior = c.getFoto();
+         uploadFileService.delete(nombreFotoAnterior);
          clienteService.delete(id);
       } catch (DataAccessException e) {
          response.put("mensaje", "Error al eliminar el cliente en la base de datos.");
-         response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
+         response.put("error", Objects.requireNonNull(e.getMessage()).concat(": ").concat(e.getMostSpecificCause().getMessage()));
          return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
       }
+
+
       response.put("mensaje", "El cliente ha sido eliminado con éxito!");
       return new ResponseEntity<>(response, HttpStatus.OK);
+   }
+
+   @PostMapping("/clientes/upload")
+   public ResponseEntity<?> upload(@RequestParam("archivo") MultipartFile archivo, @RequestParam("id") Integer id) {
+      Map<String, Object> response = new HashMap<>();
+      Cliente c = clienteService.findById(id);
+      if (!archivo.isEmpty()) {
+         String fileName;
+         try {
+            fileName = uploadFileService.copy(archivo);
+         } catch (IOException e) {
+            response.put("mensaje", "Error al subir la imagen.");
+            response.put("error", e.getMessage().concat(": ").concat(e.getCause().getMessage()));
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+         }
+
+         String nombreFotoAnterior = c.getFoto();
+         uploadFileService.delete(nombreFotoAnterior);
+
+         c.setFoto(fileName);
+         clienteService.insert(ConvertCliente.convertDtoToDao(c));
+         response.put("cliente", c);
+         response.put("mensaje", "La imagen se subió correctamente.");
+      }
+      return new ResponseEntity<>(response, HttpStatus.CREATED);
+   }
+
+   @GetMapping("/upload/img/{nombreFoto:.+}")
+   public ResponseEntity<Resource> verFoto(@PathVariable String nombreFoto) {
+      Resource resource;
+      try {
+         resource = uploadFileService.loadImage(nombreFoto);
+      } catch (MalformedURLException e) {
+         throw new RuntimeException(e);
+      }
+      HttpHeaders cabecera = new HttpHeaders();
+      cabecera.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"");
+
+      return new ResponseEntity<>(resource, cabecera, HttpStatus.OK);
+   }
+
+   @GetMapping("/clientes/regiones")
+   public List<Region> findAllRegion() {
+      return clienteService.getAllRegion();
    }
 }

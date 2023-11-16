@@ -1,9 +1,13 @@
 package com.chris.service;
 
 import com.chris.dao.ClienteDao;
+import com.chris.dao.RegionDAO;
 import com.chris.model.Cliente;
+import com.chris.model.Region;
 import com.chris.repository.ClienteRepository;
+import com.chris.repository.RegionRepository;
 import com.chris.service.util.ConvertCliente;
+import com.chris.service.util.ConvertRegion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,11 +22,22 @@ public class ClienteServiceImpl implements ClienteService {
    @Autowired
    private ClienteRepository clienteRepository;
 
+   @Autowired
+   private RegionRepository regionRepository;
+
    @Override
    public List<Cliente> getAll() {
       return clienteRepository.findAll()
        .stream()
-       .map((ConvertCliente::convertDaoToDto))
+       .map(ConvertCliente::convertDaoToDto)
+       .collect(Collectors.toList());
+   }
+
+   @Override
+   public List<Region> getAllRegion() {
+      return regionRepository.findAll()
+       .stream()
+       .map(ConvertRegion::convertDaoToDto)
        .collect(Collectors.toList());
    }
 

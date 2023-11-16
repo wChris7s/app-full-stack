@@ -1,5 +1,9 @@
 package com.chris.dao;
 
+import com.chris.model.Region;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.*;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -7,6 +11,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
+
+@Setter
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "cliente")
 public class ClienteDao {
@@ -34,62 +44,14 @@ public class ClienteDao {
    @Column(name = "create_at")
    @Temporal(TemporalType.DATE)
    private Date createAt;
+   private String foto;
 
-   /*
-   @PrePersist
-   public void onInit() {
-      createAt = new Date();
-   }
-   */
-
-   public ClienteDao() {
-   }
-
-   public ClienteDao(Integer id, String nombre, String apellido, String email, Date createAt) {
-      this.id = id;
-      this.nombre = nombre;
-      this.apellido = apellido;
-      this.email = email;
-      this.createAt = createAt;
-   }
-
-   public String getNombre() {
-      return nombre;
-   }
-
-   public void setNombre(String nombre) {
-      this.nombre = nombre;
-   }
-
-   public String getApellido() {
-      return apellido;
-   }
-
-   public void setApellido(String apellido) {
-      this.apellido = apellido;
-   }
-
-   public String getEmail() {
-      return email;
-   }
-
-   public void setEmail(String email) {
-      this.email = email;
-   }
-
-   public Date getCreateAt() {
-      return createAt;
-   }
-
-   public void setCreateAt(Date createAt) {
-      this.createAt = createAt;
-   }
-
-   public void setId(Integer id) {
-      this.id = id;
-   }
-
-   public Integer getId() {
-      return id;
-   }
+   // Carga Perezosa => Cada que se invoca el atributo getRegíon recién se realiza la carga.
+   // LAZY genera un proxy o puente hacía el objeto RegionDAO
+   // El proxy genera atributos adicionales, pero estos se deben quitar del Json.
+   @NotNull(message = "La región no puede ser vacía.")
+   @ManyToOne(fetch = FetchType.LAZY)
+   @JoinColumn(name = "region_id")
+   @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+   private RegionDAO region;
 }
