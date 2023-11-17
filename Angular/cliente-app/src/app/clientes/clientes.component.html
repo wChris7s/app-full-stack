@@ -1,13 +1,13 @@
 <detalle-cliente *ngIf="clienteSeleccionado" [cliente]="clienteSeleccionado"></detalle-cliente>
 
-<div class="card border-primary">
+<div class="card">
   <h2 class="card-header">Clientes</h2>
   <div class="card-body">
-    <h5 class="card-title text-primary">Listado de Clientes</h5>
+    <h5 class="card-title">Listado de Clientes</h5>
     <div *ngIf="clientes?.length == 0" class="alert alert-info">
       No hay clientes registrados.
     </div>
-    <table class="table table-dark table-bordered table-striped border-primary" *ngIf="clientes?.length > 0">
+    <table class="table table-light table-striped table-bordered" *ngIf="clientes?.length > 0">
       <thead>
       <tr>
         <th> # </th>
