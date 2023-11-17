@@ -1,7 +1,6 @@
 package com.chris.service;
 
 import com.chris.dao.ClienteDao;
-import com.chris.dao.RegionDAO;
 import com.chris.model.Cliente;
 import com.chris.model.Region;
 import com.chris.repository.ClienteRepository;

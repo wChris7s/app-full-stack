@@ -1,6 +1,5 @@
 package com.chris.model;
 
-import com.chris.dao.RegionDAO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

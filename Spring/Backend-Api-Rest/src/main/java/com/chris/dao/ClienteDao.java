@@ -1,6 +1,5 @@
 package com.chris.dao;
 
-import com.chris.model.Region;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
@@ -53,5 +52,5 @@ public class ClienteDao {
    @ManyToOne(fetch = FetchType.LAZY)
    @JoinColumn(name = "region_id")
    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-   private RegionDAO region;
+   private RegionDao region;
 }

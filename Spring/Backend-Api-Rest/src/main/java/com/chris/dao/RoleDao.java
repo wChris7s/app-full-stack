@@ -10,12 +10,14 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "regiones")
+@Table(name = "roles")
 
-public class RegionDAO {
+public class RoleDao {
    @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   @GeneratedValue(
+    strategy = GenerationType.IDENTITY
+   )
    private Integer id;
-   @Column
+   @Column(unique = true, length = 20)
    private String nombre;
 }

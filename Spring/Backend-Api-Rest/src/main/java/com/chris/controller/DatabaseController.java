@@ -1,7 +1,6 @@
 package com.chris.controller;
 
 import com.chris.dao.ClienteDao;
-import com.chris.dao.RegionDAO;
 import com.chris.model.Cliente;
 import com.chris.model.Region;
 import com.chris.service.ClienteService;
@@ -56,6 +55,7 @@ public class DatabaseController {
       Cliente cliente;
       Map<String, Object> response = new HashMap<>();
 
+      // Repite
       try {
          cliente = clienteService.findById(id);
       } catch (DataAccessException e) {
@@ -63,6 +63,7 @@ public class DatabaseController {
          response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
          return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
       }
+      // --------
       if (cliente == null) {
          response.put("mensaje", "El cliente ID: ".concat(id.toString()).concat(" no existe en la base de datos!"));
          return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
@@ -84,6 +85,7 @@ public class DatabaseController {
          return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
       }
 
+      // Repite
       try {
          cliente = clienteService.insert(clienteDao);
       } catch (DataAccessException e) {
@@ -91,6 +93,7 @@ public class DatabaseController {
          response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
          return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
       }
+      // ------------
       response.put("mensaje", "El cliente ha sido creado con éxito!");
       response.put("cliente", cliente);
       return new ResponseEntity<>(response, HttpStatus.CREATED);
