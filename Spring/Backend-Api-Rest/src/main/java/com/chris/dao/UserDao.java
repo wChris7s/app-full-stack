@@ -24,6 +24,12 @@ public class UserDao {
    private String password;
    private Boolean enabled;
 
+   /* ================== */
+   private String nombre;
+   private String apellido;
+   private String email;
+   /* ================== */
+
    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
    @JoinTable(
     name = "user_roles",
