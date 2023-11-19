@@ -5,6 +5,7 @@ import {ActivatedRoute} from "@angular/router";
 import Swal from "sweetalert2";
 import {HttpEventType} from "@angular/common/http";
 import {ModalService} from "./modal.service";
+import {AuthService} from "../../usuarios/auth.service";
 
 @Component({
   selector: 'detalle-cliente',
@@ -21,6 +22,7 @@ export class DetalleComponent implements OnInit {
     private clienteService: ClienteService,
     private activatedRoute: ActivatedRoute,
     public modalService: ModalService,
+    public authService: AuthService,
   ) {
   }; // Inyección de dependencias.
 
