@@ -1,7 +1,6 @@
 package com.chris.service;
 
-import com.chris.dao.UserDao;
-import com.chris.model.User_;
+import com.chris.entity.Usuario;
 import com.chris.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,15 +25,15 @@ public class UserServiceImpl implements UserService, UserDetailsService {
    private UserRepository userRepository;
 
    @Override
-   @Transactional(readOnly=true)
-   public UserDao findByUsername(String username) {
+   @Transactional(readOnly = true)
+   public Usuario findByUsername(String username) {
       return userRepository.findByUsername(username);
    }
 
    @Override
-   @Transactional(readOnly=true)
+   @Transactional(readOnly = true)
    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-      UserDao usuario = userRepository.findByUsername(username);
+      Usuario usuario = this.findByUsername(username);
 
       if (usuario == null) {
          logger.error("Error en el login: no existe el usuario '" + username + "' en el sistema!");

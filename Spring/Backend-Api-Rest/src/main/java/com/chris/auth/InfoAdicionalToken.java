@@ -1,7 +1,6 @@
 package com.chris.auth;
 
-import com.chris.dao.UserDao;
-import com.chris.model.User_;
+import com.chris.entity.Usuario;
 import com.chris.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
@@ -21,7 +20,7 @@ public class InfoAdicionalToken implements TokenEnhancer {
 
    @Override
    public OAuth2AccessToken enhance(OAuth2AccessToken oAuth2AccessToken, OAuth2Authentication oAuth2Authentication) {
-      UserDao usuario = userService.findByUsername(oAuth2Authentication.getName());
+      Usuario usuario = userService.findByUsername(oAuth2Authentication.getName());
       Map<String, Object> info = new HashMap<>();
       info.put("info_adicional", "Hola que tal!: ".concat(oAuth2Authentication.getName()));
 

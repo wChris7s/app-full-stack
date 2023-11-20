@@ -1,8 +1,7 @@
 package com.chris.service;
 
-import com.chris.dao.UserDao;
-import com.chris.model.User_;
+import com.chris.entity.Usuario;
 
 public interface UserService {
-   UserDao findByUsername(String username);
+   Usuario findByUsername(String username);
 }
