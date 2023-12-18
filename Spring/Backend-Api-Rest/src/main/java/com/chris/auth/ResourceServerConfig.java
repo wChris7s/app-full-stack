@@ -20,9 +20,13 @@ import java.util.List;
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
+
+   // Configuración de las reglas de seguridad para los endpoints
    @Override
    public void configure(HttpSecurity http) throws Exception {
-      http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/clientes", "/api/clientes/page/**", "/api/upload/img/**", "/images/**").permitAll()
+      http.authorizeRequests()
+       // Se permite el acceso a ciertos endpoints sin autenticación
+       .antMatchers(HttpMethod.GET, "/api/clientes", "/api/clientes/page/**", "/api/upload/img/**", "/images/**").permitAll()
        /*
        .antMatchers("/api/clientes/{id}").permitAll()
        .antMatchers("/api/facturas/**").permitAll()
@@ -30,27 +34,36 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
        .antMatchers(HttpMethod.POST, "/api/clientes/upload").hasAnyRole("USER", "ADMIN")
        .antMatchers(HttpMethod.POST, "/api/clientes").hasRole("ADMIN")
        .antMatchers("/api/clientes/**").hasRole("ADMIN")*/
-       .anyRequest().authenticated()
-       .and().cors().configurationSource(corsConfigurationSource());
+       .anyRequest().authenticated() // Se requiere autenticación para cualquier otra solicitud
+       .and().cors().configurationSource(corsConfigurationSource()); // Configuración de CORS
    }
 
+   // Configuración de CORS (Cross-Origin Resource Sharing)
    @Bean
    public CorsConfigurationSource corsConfigurationSource() {
       CorsConfiguration config = new CorsConfiguration();
-      config.setAllowedOrigins(List.of("http://localhost:4200"));
-      config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-      config.setAllowCredentials(true);
-      config.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization"));
+      config.setAllowedOrigins(List.of("http://localhost:4200")); // Origen permitido
+      config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Métodos HTTP permitidos
+      config.setAllowCredentials(true); // Permitir credenciales (cookies, por ejemplo)
+      config.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization")); // Encabezados permitidos
 
       UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-      source.registerCorsConfiguration("/**", config);
+      source.registerCorsConfiguration("/**", config); // Configura CORS para todas las rutas
       return source;
    }
 
+   // Configuración de un filtro CORS para aplicar la configuración CORS a todas las solicitudes
    @Bean
    public FilterRegistrationBean<CorsFilter> corsFilter() {
       FilterRegistrationBean<CorsFilter> bean = new FilterRegistrationBean<>(new CorsFilter(corsConfigurationSource()));
-      bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
+      bean.setOrder(Ordered.HIGHEST_PRECEDENCE); // Define la prioridad del filtro CORS
       return bean;
    }
+
+   /*
+   Esto es crucial para que la configuración CORS se aplique temprano en el ciclo de vida de la solicitud,
+   permitiendo que las reglas de CORS se verifiquen y apliquen antes de que otros filtros procesen la solicitud.
+   Esto garantiza que la lógica CORS se ejecute primero y tenga efecto en todas las solicitudes, permitiendo
+   o restringiendo el acceso según la configuración definida.
+    */
 }

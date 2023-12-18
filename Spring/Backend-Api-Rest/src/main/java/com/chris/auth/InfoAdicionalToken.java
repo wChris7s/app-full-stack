@@ -18,17 +18,25 @@ public class InfoAdicionalToken implements TokenEnhancer {
    @Autowired
    private UserService userService;
 
+   // Método de la interfaz TokenEnhancer para mejorar el token de acceso
    @Override
    public OAuth2AccessToken enhance(OAuth2AccessToken oAuth2AccessToken, OAuth2Authentication oAuth2Authentication) {
+      // Obtiene información del usuario utilizando el servicio UserService
       Usuario usuario = userService.findByUsername(oAuth2Authentication.getName());
-      Map<String, Object> info = new HashMap<>();
-      info.put("info_adicional", "Hola que tal!: ".concat(oAuth2Authentication.getName()));
 
+      // Crea un mapa para almacenar información adicional que se agregará al token
+      Map<String, Object> info = new HashMap<>();
+
+      // Agrega información personalizada al mapa
+      info.put("info_adicional", "Hola que tal!: ".concat(oAuth2Authentication.getName()));
       info.put("nombre", usuario.getNombre());
       info.put("apellido", usuario.getApellido());
       info.put("email", usuario.getEmail());
 
+      // Agrega la información adicional al token de acceso
       ((DefaultOAuth2AccessToken) oAuth2AccessToken).setAdditionalInformation(info);
+
+      // Devuelve el token de acceso con la información adicional agregada
       return oAuth2AccessToken;
    }
 }
